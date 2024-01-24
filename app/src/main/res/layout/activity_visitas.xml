@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phitecnicos2"
+    android:foregroundTintMode="add"
+    android:scaleType="centerCrop">
+
+        <Button
+            android:id="@+id/insertar"
+            android:layout_width="172dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="56dp"
+            android:text="Insertar Visita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="172dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="248dp"
+            android:layout_marginEnd="56dp"
+            android:text="Eliminar Visita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/actualizar"
+            android:layout_width="172dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="372dp"
+            android:layout_marginEnd="56dp"
+            android:text="Actualizar Visita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="172dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="496dp"
+            android:layout_marginEnd="56dp"
+            android:text="Mostrar Visitas"
+            app:layout_constraintBottom_toTopOf="@+id/linea"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="81dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="314dp"
+            android:layout_marginBottom="9dp"
+            android:text="Menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/linea"
+            android:layout_width="493dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="133dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="64dp"
+            android:text="_____________________________________________________________________________"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="148dp"
+            app:layout_constraintEnd_toStartOf="@+id/insertar"
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/insertar" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="264dp"
+            android:layout_marginEnd="33dp"
+            app:layout_constraintEnd_toStartOf="@+id/eliminar"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/eliminar" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="248dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/actualizar"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@drawable/actualizar" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="86dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mostrar"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@drawable/mostrar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
