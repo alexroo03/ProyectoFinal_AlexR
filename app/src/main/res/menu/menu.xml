@@ -13,6 +13,11 @@
         android:title="Cerrar Sesion" />
     <item
         android:id="@+id/camara"
-        android:title="Camara" />
+        android:title="Camara"
+        android:icon="@drawable/camara"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/salir"
+        android:title="Salir" />
 
 </menu>

@@ -48,6 +48,11 @@ open class ActivityWithMenu: AppCompatActivity() {
 
                 true
             }
+            R.id.salir ->  {
+                actividadActual = 4
+                System.exit(0)
+                true
+            }
 
 
             else -> super.onOptionsItemSelected(item)
