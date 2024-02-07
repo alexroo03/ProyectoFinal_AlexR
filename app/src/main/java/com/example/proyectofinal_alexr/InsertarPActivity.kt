@@ -18,11 +18,12 @@ class InsertarPActivity: AppCompatActivity() {
         binding.insertar.setOnClickListener {
             if(binding.nombre.text.isNotEmpty() &&
                 binding.apellido.text.isNotEmpty() &&
+                binding.idp.text.isNotEmpty() &&
                 binding.telefono.text.isNotEmpty() &&
                 binding.puesto.text.isNotEmpty() &&
                 binding.correo.text.isNotEmpty()){
 
-                        db.collection("Personal").document(binding.nombre.text.toString())
+                        db.collection("Personal").document(binding.idp.text.toString())
                             .set(mapOf(
                                 "nombre" to binding.nombre.text.toString(),
                                 "apellido" to binding.apellido.text.toString(),

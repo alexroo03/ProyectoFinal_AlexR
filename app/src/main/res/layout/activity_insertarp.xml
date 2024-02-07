@@ -8,6 +8,20 @@
     android:scaleType="centerCrop">
 
     <EditText
+        android:id="@+id/idp"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/nombre"
         android:layout_width="149dp"
         android:layout_height="41dp"

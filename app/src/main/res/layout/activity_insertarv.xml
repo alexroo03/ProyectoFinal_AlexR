@@ -37,6 +37,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/idv"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/nombreempresa"
         android:layout_width="178dp"
         android:layout_height="47dp"

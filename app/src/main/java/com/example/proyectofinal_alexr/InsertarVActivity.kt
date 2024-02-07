@@ -19,11 +19,12 @@ class InsertarVActivity: AppCompatActivity() {
             if(binding.fecha.text.isNotEmpty() &&
                 binding.nombreempresa.text.isNotEmpty() &&
                 binding.observaciones.text.isNotEmpty() &&
+                binding.idv.text.isNotEmpty() &&
                 binding.tipovisita.text.isNotEmpty() &&
                 binding.trabajadoresexternos.text.isNotEmpty() &&
                 binding.trabajadorempresa.text.isNotEmpty()){
 
-                db.collection("Visitas").document()
+                db.collection("Visitas").document(binding.idv.text.toString())
                     .set(mapOf(
                         "fecha" to binding.fecha.text.toString(),
                         "nombreempresa" to binding.nombreempresa.text.toString(),
