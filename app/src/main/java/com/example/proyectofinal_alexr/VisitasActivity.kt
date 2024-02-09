@@ -16,6 +16,14 @@ class VisitasActivity: ActivityWithMenu() {
             startActivity(Intent(this, InsertarVActivity::class.java))
         }
 
+        binding.eliminar.setOnClickListener{
+            startActivity(Intent(this, EliminarVActivity::class.java))
+        }
+
+        binding.mostrar.setOnClickListener{
+            startActivity(Intent(this, MostrarVActivity::class.java))
+        }
+
         binding.menu.setOnClickListener{
             startActivity(Intent(this, HomeActivity::class.java))
         }

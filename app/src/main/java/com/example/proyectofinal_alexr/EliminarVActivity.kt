@@ -1,28 +1,26 @@
 package com.example.proyectofinal_alexr
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyectofinal_alexr.databinding.ActivityEliminarpBinding
-import com.google.android.gms.tasks.OnCompleteListener
+import com.example.proyectofinal_alexr.databinding.ActivityEliminarvBinding
 import com.google.firebase.firestore.FirebaseFirestore
 
-class EliminarPActivity: AppCompatActivity() {
+class EliminarVActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        val binding = ActivityEliminarpBinding.inflate(layoutInflater)
+        val binding = ActivityEliminarvBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val db= FirebaseFirestore.getInstance()
 
         binding.bEliminar.setOnClickListener {
 
-            db.collection("Personal")
-                .document(binding.ptidp.text.toString())
+            db.collection("Visitas")
+                .document(binding.ptidv.text.toString())
                 .delete()
 
-            Toast.makeText(this, "Persona eliminada exitosamente", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Visita eliminada exitosamente", Toast.LENGTH_SHORT).show()
             finish()
         }
     }

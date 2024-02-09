@@ -26,12 +26,12 @@ class InsertarVActivity: AppCompatActivity() {
 
                 db.collection("Visitas").document(binding.idv.text.toString())
                     .set(mapOf(
-                        "fecha" to binding.fecha.text.toString(),
-                        "nombreempresa" to binding.nombreempresa.text.toString(),
-                        "observaciones" to binding.observaciones.text.toString(),
-                        "tipovisita" to binding.tipovisita.text.toString(),
-                        "trabajadoresexternos" to binding.trabajadoresexternos.text.toString(),
-                        "trabajadorempresa" to binding.trabajadorempresa.text.toString()
+                        "Fecha" to binding.fecha.text.toString(),
+                        "Nombreempresa" to binding.nombreempresa.text.toString(),
+                        "Observaciones" to binding.observaciones.text.toString(),
+                        "Tipovisita" to binding.tipovisita.text.toString(),
+                        "Trabajadoresexternos" to binding.trabajadoresexternos.text.toString(),
+                        "Trabajadorempresa" to binding.trabajadorempresa.text.toString()
                     )
                     )
 

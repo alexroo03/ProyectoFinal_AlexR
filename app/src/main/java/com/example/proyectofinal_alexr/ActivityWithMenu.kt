@@ -16,12 +16,26 @@ open class ActivityWithMenu: AppCompatActivity() {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu, menu)
 
+
+        for (i in 0 until   menu.size()) {
+            if (i== actividadActual) menu.getItem(i).isEnabled =false
+            else menu.getItem(i).isEnabled= true
+        }
         return true
 
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.home ->  {
+                actividadActual = 0
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+                startActivity(intent)
+
+                true
+            }
+
             R.id.personal ->  {
                 actividadActual = 1
                 val intent = Intent(this, PersonalActivity::class.java)
@@ -50,7 +64,7 @@ open class ActivityWithMenu: AppCompatActivity() {
             }
             R.id.salir ->  {
                 actividadActual = 4
-                System.exit(0)
+                finishAffinity()
                 true
             }
 

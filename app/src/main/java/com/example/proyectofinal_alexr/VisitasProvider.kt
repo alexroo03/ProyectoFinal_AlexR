@@ -1,9 +1,9 @@
 package com.example.proyectofinal_alexr
 
-class PersonalProvider {
+class VisitasProvider {
     companion object{
 
-        val pLista = listOf<Personal>(
+        val vLista = listOf<Visitas>(
 
         )
     }
