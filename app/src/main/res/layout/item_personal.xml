@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="110dp"
     android:layout_marginHorizontal="10dp"
     android:layout_marginVertical="8dp"
-    app:cardBackgroundColor="#1C1B1B"
+    app:cardBackgroundColor="#635E5E"
     app:cardCornerRadius="20dp"
     app:cardElevation="18dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="118dp">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvnombre"
@@ -31,24 +31,24 @@
             android:id="@+id/tvtelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#FFFFFF"
             android:text="telefono"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintHorizontal_bias="0.732"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvemail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_width="299dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="52dp"
             android:text="email"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintHorizontal_bias="0.258"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,13 +69,12 @@
             android:id="@+id/tvpuesto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="325dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="54dp"
             android:text="puesto"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.081"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,7 +86,7 @@
             android:text="apellido"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintHorizontal_bias="0.353"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,7 +94,7 @@
             android:id="@+id/IBeliminar"
             android:layout_width="53dp"
             android:layout_height="61dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#FFFFFF"
             android:scaleType="centerCrop"
@@ -103,15 +102,70 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/eliminar" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="57dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:text="Nombre:"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.585" />
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="51dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="40dp"
+            android:text="Correo:"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="51dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="72dp"
+            android:text="Puesto:"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="57dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:text="Apellidos:"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="57dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:text="Telefono:"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.746"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

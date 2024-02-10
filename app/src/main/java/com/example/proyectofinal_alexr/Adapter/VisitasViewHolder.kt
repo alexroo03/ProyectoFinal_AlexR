@@ -10,12 +10,12 @@ import com.example.proyectofinal_alexr.databinding.ItemVisitasBinding
 class VisitasViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val binding = ItemVisitasBinding.bind(view)
     fun render(visitasModel: Visitas) {
-        binding.tvfecha.text = visitasModel.fecha
-        binding.tvnombreempresa.text = visitasModel.nombreEmpresa
+        binding.tvfecha.text = visitasModel.Fecha
+        binding.tvnombreempresa.text = visitasModel.Nombreempresa
         binding.tvobservaciones.text = visitasModel.Observaciones
-        binding.tvtipovisita.text = visitasModel.TipoVisitas
-        binding.tvtrabajadoresexternos.text = visitasModel.TrabajadoresExternos
-        binding.tvtrabajadorempresa.text = visitasModel.TrabajadorEmpresa
+        binding.tvtipovisita.text = visitasModel.Tipovisita
+        binding.tvtrabajadoresexternos.text = visitasModel.Trabajadoresexternos
+        binding.tvtrabajadorempresa.text = visitasModel.Trabajadorempresa
 
 
     }

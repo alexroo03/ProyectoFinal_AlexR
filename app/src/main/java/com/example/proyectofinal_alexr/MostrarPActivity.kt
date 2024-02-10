@@ -27,13 +27,15 @@ class MostrarPActivity : ActivityWithMenu() {
         val decoration = DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
         binding.recycler.addItemDecoration(decoration)
 
-        // Creamos una editText para hacer un buscador para filtrar por nombre
-        binding.buscador.addTextChangedListener { buscar ->
+        // Creamos un EditText para hacer un buscador para filtrar por nombre
+        binding.buscador.addTextChangedListener { text ->
+            val filtroNombre = text.toString().trim().lowercase()
             val filtroPersonal = PersonalProvider.pLista.filter { personal ->
-                personal.nombre.lowercase().contains(buscar.toString().lowercase())
+                personal.nombre.lowercase().contains(filtroNombre)
             }
             adapter.actualizarPersonal(filtroPersonal)
         }
+
 
         // Inicializa la lista de Personal y el RecyclerView
         listaPersonal = ArrayList()
@@ -69,4 +71,5 @@ class MostrarPActivity : ActivityWithMenu() {
             }
 
     }
+
 }

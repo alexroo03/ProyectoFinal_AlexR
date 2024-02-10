@@ -1,4 +1,4 @@
 package com.example.proyectofinal_alexr
 
-data class Visitas (val fecha:String="",val nombreEmpresa:String="",val Observaciones:String="", val TipoVisitas:String="",val TrabajadorEmpresa:String="",val TrabajadoresExternos: String){
+data class Visitas (val Fecha:String="",val Nombreempresa:String="",val Observaciones:String="", val Tipovisita:String="",val Trabajadoresexternos:String="",val Trabajadorempresa: String=""){
 }

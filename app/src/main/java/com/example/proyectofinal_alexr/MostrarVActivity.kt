@@ -6,13 +6,12 @@ import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyectofinal_alexr.Adapter.PersonalAdapter
 import com.example.proyectofinal_alexr.Adapter.VisitasAdapter
 import com.example.proyectofinal_alexr.databinding.ActivityMostrarvBinding
-import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
 
-class MostrarVActivity: ActivityWithMenu()  {
+class MostrarVActivity : ActivityWithMenu()  {
+
     private lateinit var listaVisitas: ArrayList<Visitas>
     private lateinit var recycler: RecyclerView
     private lateinit var adapter: VisitasAdapter
@@ -27,7 +26,7 @@ class MostrarVActivity: ActivityWithMenu()  {
         // Creamos una editText para hacer un buscador para filtrar por nombre
         binding.buscador.addTextChangedListener { buscar ->
             val filtroVisita = VisitasProvider.vLista.filter { visitas ->
-                visitas.nombreEmpresa.lowercase().contains(buscar.toString().lowercase())
+                visitas.Nombreempresa.lowercase().contains(buscar.toString().lowercase())
             }
             adapter.actualizarVisitas(filtroVisita)
         }
@@ -54,8 +53,8 @@ class MostrarVActivity: ActivityWithMenu()  {
             .get()
             .addOnSuccessListener { cargar ->
                 cargar.forEach { document ->
-                    val visita = document.toObject(Visitas::class.java)
-                    listaVisitas.add(visita)
+                    val visit = document.toObject(Visitas::class.java)
+                    listaVisitas.add(visit)
                 }
                 // Notifica al adaptador de los cambios en los datos después de cargarlos
                 adapter.notifyDataSetChanged()

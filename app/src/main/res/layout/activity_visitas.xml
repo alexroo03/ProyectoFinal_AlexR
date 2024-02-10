@@ -11,10 +11,11 @@
         <Button
             android:id="@+id/insertar"
             android:layout_width="172dp"
-            android:layout_height="124dp"
+            android:layout_height="120dp"
             android:layout_marginTop="124dp"
             android:layout_marginEnd="56dp"
             android:text="Insertar Visita"
+            android:background="@drawable/boton_redondo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +29,7 @@
             android:text="Visitas"
             android:textSize="40sp"
             android:textStyle="bold"
+            android:textColor="#5E5A5A"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.26"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,30 +38,33 @@
         <Button
             android:id="@+id/eliminar"
             android:layout_width="172dp"
-            android:layout_height="124dp"
+            android:layout_height="120dp"
             android:layout_marginTop="248dp"
             android:layout_marginEnd="56dp"
             android:text="Eliminar Visita"
+            android:background="@drawable/boton_redondo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/actualizar"
             android:layout_width="172dp"
-            android:layout_height="124dp"
+            android:layout_height="120dp"
             android:layout_marginTop="372dp"
             android:layout_marginEnd="56dp"
             android:text="Actualizar Visita"
+            android:background="@drawable/boton_redondo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/mostrar"
             android:layout_width="172dp"
-            android:layout_height="124dp"
+            android:layout_height="120dp"
             android:layout_marginTop="496dp"
             android:layout_marginEnd="56dp"
             android:text="Mostrar Visitas"
+            android:background="@drawable/boton_redondo"
             app:layout_constraintBottom_toTopOf="@+id/linea"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -110,7 +115,7 @@
             android:layout_marginTop="148dp"
             android:visibility="visible"
             app:layout_constraintEnd_toStartOf="@+id/insertar"
-            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintHorizontal_bias="0.744"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/insertar" />

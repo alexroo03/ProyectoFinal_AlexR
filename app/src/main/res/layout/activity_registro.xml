@@ -8,20 +8,37 @@
     android:scaleType="centerCrop"
     tools:context=".RegistroActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="195dp"
+        android:text="Registro"
+        android:textColor="#5E5A5A"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/nombre"
         android:layout_width="262dp"
         android:layout_height="64dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="184dp"
-        android:backgroundTint="#000000"
         android:backgroundTintMode="add"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
-        android:shadowColor="#000000"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/contorno"
+        android:paddingLeft="20dp"
+        android:backgroundTint="#605A5A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,12 +48,15 @@
         android:layout_height="64dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="352dp"
-        android:backgroundTint="#000000"
         android:backgroundTintMode="add"
         android:ems="10"
         android:hint="Cotraseña"
         android:inputType="text"
-        android:textColorHint="#000000"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/contorno"
+        android:paddingLeft="20dp"
+        android:backgroundTint="#605A5A"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +66,6 @@
         android:layout_height="64dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="268dp"
-        android:backgroundTint="#000000"
         android:backgroundTintMode="add"
         android:drawableTint="#000000"
         android:ems="10"
@@ -54,17 +73,22 @@
         android:foregroundTintMode="add"
         android:hint="Correo"
         android:inputType="text"
-        android:textColorHint="#000000"
+        android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
+        android:background="@drawable/contorno"
+        android:paddingLeft="20dp"
+        android:backgroundTint="#605A5A"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/registrarse"
-        android:layout_width="153dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="140dp"
+        android:layout_width="206dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="84dp"
         android:text="Registrar"
+        android:background="@drawable/boton_redondo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasena" />
 
