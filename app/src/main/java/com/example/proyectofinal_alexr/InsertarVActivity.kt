@@ -77,27 +77,14 @@ class InsertarVActivity: AppCompatActivity() {
             }
         }
 
-        // SPINNER TRABAJADORES DE LA EMPRESA
-        val trabajadores: Spinner = findViewById(R.id.strabajadores)
-        val listaTrab = listOf("Martín Fernández", "Gema", "Alfonso Fernández","Juan Manuel Rodríguez","Miguel López","Elena Troncoso")
-        val adaptadorT = ArrayAdapter(this, android.R.layout.simple_spinner_item, listaTrab)
-        adaptadorT.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
-        trabajadores.adapter = adaptadorT
-
-        trabajadores.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                vista: View?,
-                posicion: Int,
-                id: Long
-            ) {
-                listaTrab[posicion]
+        // OBTENER LOS NOMBRES Y APELLIDOS DE LOS TRABAJADORES DE FIREBASE
+        db.collection("Personal")
+            .get()
+            .addOnSuccessListener { documents ->
+                val nombresApellidos = documents.mapNotNull { it.getString("nombre") + " " + it.getString("apellido") }
+                val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, nombresApellidos)
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+                binding.strabajadores.adapter = adapter
             }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-        }
     }
 }

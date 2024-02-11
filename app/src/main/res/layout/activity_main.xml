@@ -36,25 +36,27 @@
 
     <Button
         android:id="@+id/registrar"
-        android:layout_width="184dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="192dp"
-        android:text="REGISTRARSE"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/boton_redondo"
+        android:text="REGISTRARSE"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/iniciar"
-        android:layout_width="179dp"
+        android:layout_width="180dp"
         android:layout_height="77dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="192dp"
-        android:text="INICIAR SESION"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/boton_redondo"
+        android:text="INICIAR SESION"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/contrasena"
