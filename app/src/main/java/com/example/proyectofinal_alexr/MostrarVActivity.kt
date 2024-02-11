@@ -48,7 +48,6 @@ class MostrarVActivity : ActivityWithMenu()  {
         // Obtiene una instancia de la base de datos Firestore y el email del usuario actual
         val db = FirebaseFirestore.getInstance()
 
-        // Filtrar documentos por el campo "Nombre" que tenga el valor del email del personal actual
         db.collection("Visitas")
             .get()
             .addOnSuccessListener { cargar ->

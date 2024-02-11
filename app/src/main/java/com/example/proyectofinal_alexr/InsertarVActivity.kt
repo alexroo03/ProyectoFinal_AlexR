@@ -1,13 +1,21 @@
 package com.example.proyectofinal_alexr
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectofinal_alexr.databinding.ActivityInsertarvBinding
 import com.google.firebase.firestore.FirebaseFirestore
+import java.text.SimpleDateFormat
+import java.util.Date
 
 class InsertarVActivity: AppCompatActivity() {
+    @SuppressLint("SimpleDateFormat")
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         val binding = ActivityInsertarvBinding.inflate(layoutInflater)
@@ -18,20 +26,21 @@ class InsertarVActivity: AppCompatActivity() {
         binding.insertar.setOnClickListener {
             if(binding.fecha.text.isNotEmpty() &&
                 binding.nombreempresa.text.isNotEmpty() &&
-                binding.observaciones.text.isNotEmpty() &&
                 binding.idv.text.isNotEmpty() &&
-                binding.tipovisita.text.isNotEmpty() &&
-                binding.trabajadoresexternos.text.isNotEmpty() &&
-                binding.trabajadorempresa.text.isNotEmpty()){
+                binding.trabajadoresexternos.text.isNotEmpty()){
+                //INSETAR TIPOVISITA EN FIREBASE COMO UIN SPINNER
+                val tipVisita = binding.stvisita.selectedItem.toString()
+                //INSETAR TIPOVISITA EN FIREBASE COMO UIN SPINNER
+                val trab = binding.strabajadores.selectedItem.toString()
 
                 db.collection("Visitas").document(binding.idv.text.toString())
                     .set(mapOf(
                         "Fecha" to binding.fecha.text.toString(),
                         "Nombreempresa" to binding.nombreempresa.text.toString(),
                         "Observaciones" to binding.observaciones.text.toString(),
-                        "Tipovisita" to binding.tipovisita.text.toString(),
+                        "Tipovisita" to tipVisita,
                         "Trabajadoresexternos" to binding.trabajadoresexternos.text.toString(),
-                        "Trabajadorempresa" to binding.trabajadorempresa.text.toString()
+                        "Trabajadorempresa" to trab
                     )
                     )
 
@@ -42,6 +51,52 @@ class InsertarVActivity: AppCompatActivity() {
 
             }else{
                 Toast.makeText(this, "ERROR: Algún campo esta vacío", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        // SPINNER TIPO DE VISITA
+        val tipos: Spinner = findViewById(R.id.stvisita)
+        val lista = listOf("Visita Ante-Proyecto", "Visita de Inspección Técnica ", "Visita de Medidas", "Visita Seguimineto de Obra", "Visita Final de Obra")
+        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
+        adaptador.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        tipos.adapter = adaptador
+
+        tipos.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                vista: View?,
+                posicion: Int,
+                id: Long
+            ) {
+                lista[posicion]
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
+        // SPINNER TRABAJADORES DE LA EMPRESA
+        val trabajadores: Spinner = findViewById(R.id.strabajadores)
+        val listaTrab = listOf("Martín Fernández", "Gema", "Alfonso Fernández","Juan Manuel Rodríguez","Miguel López","Elena Troncoso")
+        val adaptadorT = ArrayAdapter(this, android.R.layout.simple_spinner_item, listaTrab)
+        adaptadorT.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        trabajadores.adapter = adaptadorT
+
+        trabajadores.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                vista: View?,
+                posicion: Int,
+                id: Long
+            ) {
+                listaTrab[posicion]
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
             }
         }
     }

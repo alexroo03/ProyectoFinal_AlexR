@@ -25,6 +25,11 @@ class PersonalActivity: ActivityWithMenu() {
             startActivity(Intent(this, EliminarPActivity::class.java))
         }
 
+        //BOTON PARA MOSTRAR EL MENU DE ACTUALIZAR PERSONAL
+        binding.actualizar.setOnClickListener{
+            startActivity(Intent(this, ActualizarPActivity::class.java))
+        }
+
         //BOTON PARA VOLVER AL MENU
         binding.menu.setOnClickListener{
             startActivity(Intent(this, HomeActivity::class.java))

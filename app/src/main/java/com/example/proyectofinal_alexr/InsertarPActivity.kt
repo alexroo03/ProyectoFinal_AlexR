@@ -47,7 +47,7 @@ class InsertarPActivity: AppCompatActivity() {
             }
         }
 
-
+        //OBTENER EL LISTADO DEL SPINNER
         // Creo un objeto de la clase spinner
         val titulos: Spinner = findViewById(R.id.sPuesto)
         val lista = listOf("Delineante", "Limpieza", "Programador", "Ingeniero")

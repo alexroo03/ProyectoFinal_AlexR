@@ -23,45 +23,95 @@
         android:id="@+id/insertar"
         android:layout_width="172dp"
         android:layout_height="120dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="56dp"
-        android:text="Insertar Personal"
         android:background="@drawable/boton_redondo"
+        android:text="Insertar Personal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toStartOf="@+id/insertar"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/insertar" />
 
     <Button
         android:id="@+id/eliminar"
         android:layout_width="172dp"
         android:layout_height="120dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="268dp"
         android:layout_marginEnd="56dp"
-        android:text="Eliminar Personal"
         android:background="@drawable/boton_redondo"
+        android:text="Eliminar Personal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="86dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toStartOf="@+id/eliminar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eliminar" />
 
     <Button
         android:id="@+id/actualizar"
         android:layout_width="172dp"
         android:layout_height="120dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="396dp"
         android:layout_marginEnd="56dp"
-        android:text="Actualizar Personal"
         android:background="@drawable/boton_redondo"
+        android:text="Actualizar Personal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="86dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="412dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toStartOf="@+id/eliminar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actualizar" />
 
     <Button
         android:id="@+id/mostrar"
         android:layout_width="172dp"
         android:layout_height="120dp"
-        android:layout_marginTop="496dp"
+        android:layout_marginTop="528dp"
         android:layout_marginEnd="56dp"
-        android:text="Mostrar Personal"
         android:background="@drawable/boton_redondo"
+        android:text="Mostrar Personal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="86dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toStartOf="@+id/eliminar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mostrar" />
 
     <Button
         android:id="@+id/menu"
@@ -90,56 +140,6 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="86dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="148dp"
-        app:layout_constraintEnd_toStartOf="@+id/insertar"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/insertar" />
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="86dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="33dp"
-        app:layout_constraintEnd_toStartOf="@+id/eliminar"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/eliminar" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="86dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="33dp"
-        app:layout_constraintEnd_toStartOf="@+id/eliminar"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/actualizar" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="86dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="520dp"
-        android:layout_marginEnd="33dp"
-        app:layout_constraintEnd_toStartOf="@+id/eliminar"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mostrar" />
 
     <TextView
         android:id="@+id/textView"
