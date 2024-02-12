@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    android:layout_marginHorizontal="10dp"
-    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="10dp"
     app:cardBackgroundColor="#8F8F8F"
     app:cardCornerRadius="20dp"
     app:cardElevation="18dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="375dp"
         android:layout_height="match_parent">
 
         <TextView
@@ -23,7 +23,7 @@
             android:text="nombre"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintHorizontal_bias="0.347"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,12 +31,12 @@
             android:id="@+id/tvtelefono"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="92dp"
             android:backgroundTint="#FFFFFF"
             android:text="telefono"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintHorizontal_bias="0.708"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,14 +54,14 @@
 
         <TextView
             android:id="@+id/tvid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="16dp"
             android:text="id"
             android:textColor="#FFFFFF"
-            android:visibility="invisible"
+            android:textSize="13dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.958"
+            app:layout_constraintHorizontal_bias="0.073"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,20 +86,9 @@
             android:text="apellido"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.928"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/IBeliminar"
-            android:layout_width="36dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="4dp"
-            android:backgroundTint="#FFFFFF"
-            android:scaleType="centerCrop"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/eliminar" />
 
         <TextView
             android:id="@+id/textView4"
@@ -107,10 +96,11 @@
             android:layout_height="17dp"
             android:layout_marginTop="4dp"
             android:text="Nombre:"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="10sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintHorizontal_bias="0.308"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -120,8 +110,9 @@
             android:layout_height="12dp"
             android:layout_marginTop="40dp"
             android:text="Correo:"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="10sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
@@ -133,8 +124,9 @@
             android:layout_height="12dp"
             android:layout_marginTop="80dp"
             android:text="Puesto:"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="10sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
@@ -146,10 +138,11 @@
             android:layout_height="17dp"
             android:layout_marginTop="4dp"
             android:text="Apellidos:"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="10sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintHorizontal_bias="0.657"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -157,12 +150,27 @@
             android:id="@+id/textView8"
             android:layout_width="57dp"
             android:layout_height="17dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="80dp"
             android:text="Telefono:"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="10sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintHorizontal_bias="0.657"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="26dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:text="ID:"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

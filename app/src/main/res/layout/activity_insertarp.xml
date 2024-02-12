@@ -46,8 +46,6 @@
         android:inputType="text"
         android:paddingLeft="20dp"
         android:singleLine="true"
-        android:textColor="@color/white"
-        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,9 +122,10 @@
 
     <EditText
         android:id="@+id/correo"
-        android:layout_width="360dp"
+        android:layout_width="330dp"
         android:layout_height="45dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="300dp"
         android:background="@drawable/contorno"
         android:backgroundTint="#605A5A"
         android:backgroundTintMode="add"
@@ -141,7 +140,7 @@
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.395"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

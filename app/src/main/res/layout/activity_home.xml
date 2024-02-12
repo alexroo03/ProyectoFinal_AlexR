@@ -10,41 +10,56 @@
     <TextView
         android:id="@+id/linea"
         android:layout_width="493dp"
-        android:layout_height="52dp"
+        android:layout_height="50dp"
         android:layout_marginStart="133dp"
         android:layout_marginEnd="220dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="40dp"
         android:text="_____________________________________________________________________________"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tCorreo"
-        android:layout_width="125dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:text="administracion
-        @phitecnicos.com"
+        android:id="@+id/fondo"
+        android:layout_width="478dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/contorno"
+        android:backgroundTint="#FFFFFF"
+        android:text=""
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tCorreo2"
+        android:id="@+id/numero"
         android:layout_width="89dp"
         android:layout_height="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="955 414 579"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/correoo"
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="administracion@phitecnicos.com"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -52,64 +67,81 @@
         android:layout_width="248dp"
         android:layout_height="279dp"
         android:layout_marginStart="126dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="153dp"
         android:contentDescription="pagina web de phitecnicos"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/phitecnicos" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="48dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintHorizontal_bias="0.658"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/tlf" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="64dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="61dp"
+        android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/correo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="148dp"
+        android:background="#050139"
+        android:text="ACCESO DIRECTO"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/biVisitas"
         android:layout_width="121dp"
         android:layout_height="57dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginTop="516dp"
         android:layout_marginEnd="146dp"
-        android:text="Insertar Visitas"
         android:background="@drawable/boton_redondo"
+        android:text="Insertar Visitas"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="8dp"
-        android:text="ACCESO DIRECTO"
+        android:layout_marginTop="92dp"
+        android:text="PAGINA WEB"
+        android:textColor="@color/black"
+        android:textSize="12dp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/biVisitas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

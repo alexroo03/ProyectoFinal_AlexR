@@ -35,7 +35,8 @@ class InsertarPActivity: AppCompatActivity() {
                             "apellido" to binding.apellido.text.toString(),
                             "telefono" to binding.telefono.text.toString(),
                             "puesto" to puestoSelec,
-                            "correo" to binding.correo.text.toString()
+                            "correo" to binding.correo.text.toString(),
+                            "id" to binding.idp.text.toString()
                         )
                     )
 

@@ -3,15 +3,16 @@
     <style name="Base.Theme.ProyectoFinal_AlexR" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorPrimary">#050629</item>
         <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">#774FE3</item>
+        <item name="colorAccent">#FFFFFF</item>
 
     </style>
 
     <style name="SplashTheme" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenBackground">#E3E3E3</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/phitecnicos2</item>
         <item name="postSplashScreenTheme">@style/Theme.ProyectoFinal_AlexR</item>
     </style>
+
 
     <style name="Theme.ProyectoFinal_AlexR" parent="Base.Theme.ProyectoFinal_AlexR" />
 </resources>

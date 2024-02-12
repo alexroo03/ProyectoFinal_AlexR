@@ -1,12 +1,13 @@
 package com.example.proyectofinal_alexr.Adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectofinal_alexr.Personal
 import com.example.proyectofinal_alexr.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class PersonalAdapter(private var personalList:List<Personal>): RecyclerView.Adapter<PersonalViewHolder>(){
 
@@ -18,6 +19,7 @@ class PersonalAdapter(private var personalList:List<Personal>): RecyclerView.Ada
     override fun onBindViewHolder(holder: PersonalViewHolder, position: Int) {
         val item = personalList[position]
         holder.render(item)
+
     }
 
     override fun getItemCount(): Int {
@@ -28,4 +30,6 @@ class PersonalAdapter(private var personalList:List<Personal>): RecyclerView.Ada
         this.personalList = personalLista
         notifyDataSetChanged()
     }
+
+
 }

@@ -23,12 +23,12 @@ class MostrarVActivity : ActivityWithMenu()  {
         val decoration = DividerItemDecoration(this, LinearLayoutManager.VERTICAL)
         binding.recycler.addItemDecoration(decoration)
 
-        // Creamos una editText para hacer un buscador para filtrar por nombre
-        binding.buscador.addTextChangedListener { buscar ->
-            val filtroVisita = VisitasProvider.vLista.filter { visitas ->
-                visitas.Nombreempresa.lowercase().contains(buscar.toString().lowercase())
-            }
-            adapter.actualizarVisitas(filtroVisita)
+        // Creamos un EditText para hacer un buscador para filtrar por nombre
+        binding.buscador.addTextChangedListener { filtro ->
+            // Actualiza la lista de productos en el adaptador según el filtro ingresado
+            adapter.actualizarVisitas(listaVisitas.filter { producto ->
+                producto.Nombreempresa.lowercase().contains(filtro.toString().lowercase())
+            })
         }
 
         // Inicializa la lista de Personal y el RecyclerView

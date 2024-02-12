@@ -15,5 +15,6 @@ class VisitasViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         binding.tvtipovisita.text = visitasModel.Tipovisita
         binding.tvtrabajadoresexternos.text = visitasModel.Trabajadoresexternos
         binding.tvtrabajadorempresa.text = visitasModel.Trabajadorempresa
+        binding.tvidv.text = visitasModel.Id
     }
 }

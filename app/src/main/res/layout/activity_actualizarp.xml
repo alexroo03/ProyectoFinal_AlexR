@@ -8,7 +8,7 @@
     android:scaleType="centerCrop">
 
     <Button
-        android:id="@+id/bEliminar"
+        android:id="@+id/bActualizar"
         android:layout_width="129dp"
         android:layout_height="83dp"
         android:layout_marginStart="158dp"

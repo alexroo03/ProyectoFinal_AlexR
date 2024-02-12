@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 open class ActivityWithMenu: AppCompatActivity() {
@@ -55,18 +56,46 @@ open class ActivityWithMenu: AppCompatActivity() {
             }
 
             R.id.cerrar ->  {
-                actividadActual = 3
-                val intent = Intent(this, MainActivity::class.java)
+                AlertDialog.Builder(this).apply{
+                    setTitle("Confirmar cierre")
+                    setMessage("¿Está seguro de Cerrar Sesion?")
+                    setPositiveButton("Sí") { dialog, _ ->
+                        actividadActual = 3
+                        val intent = Intent(this@ActivityWithMenu, MainActivity::class.java)
+                        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+                        startActivity(intent)
+                    }
+                    setNegativeButton("No") { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                    show()
+                }
+                true
+            }
+            R.id.salir -> {
+                AlertDialog.Builder(this).apply {
+                    setTitle("Confirmar salida")
+                    setMessage("¿Está seguro de querer Salir?")
+                    setPositiveButton("Sí") { dialog, _ ->
+                        actividadActual = 4
+                        finishAffinity()
+                    }
+                    setNegativeButton("No") { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                    show()
+                }
+                true
+            }
+            R.id.camara ->  {
+                actividadActual = 5
+                val intent = Intent(this, VisitasActivity::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
                 startActivity(intent)
 
                 true
             }
-            R.id.salir ->  {
-                actividadActual = 4
-                finishAffinity()
-                true
-            }
+
 
 
             else -> super.onOptionsItemSelected(item)

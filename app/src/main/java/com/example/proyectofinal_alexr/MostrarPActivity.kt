@@ -28,12 +28,11 @@ class MostrarPActivity : ActivityWithMenu() {
         binding.recycler.addItemDecoration(decoration)
 
         // Creamos un EditText para hacer un buscador para filtrar por nombre
-        binding.buscador.addTextChangedListener { text ->
-            val filtroNombre = text.toString().trim().lowercase()
-            val filtroPersonal = PersonalProvider.pLista.filter { personal ->
-                personal.nombre.lowercase().contains(filtroNombre)
-            }
-            adapter.actualizarPersonal(filtroPersonal)
+        binding.buscador.addTextChangedListener { filtro ->
+            // Actualiza la lista de productos en el adaptador según el filtro ingresado
+            adapter.actualizarPersonal(listaPersonal.filter { producto ->
+                producto.nombre.lowercase().contains(filtro.toString().lowercase())
+            })
         }
 
 

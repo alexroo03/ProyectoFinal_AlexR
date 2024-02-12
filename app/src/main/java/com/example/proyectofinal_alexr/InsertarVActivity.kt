@@ -40,6 +40,7 @@ class InsertarVActivity: AppCompatActivity() {
                         "Observaciones" to binding.observaciones.text.toString(),
                         "Tipovisita" to tipVisita,
                         "Trabajadoresexternos" to binding.trabajadoresexternos.text.toString(),
+                        "Id" to binding.idv.text.toString(),
                         "Trabajadorempresa" to trab
                     )
                     )

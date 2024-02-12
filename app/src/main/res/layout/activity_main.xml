@@ -23,7 +23,7 @@
         android:foregroundTint="#674C4C"
         android:hint="Escriba un correo"
         android:singleLine="true"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColorHint="#FFFFFF"
         android:textColor="@color/white"
         android:background="@drawable/contorno"
