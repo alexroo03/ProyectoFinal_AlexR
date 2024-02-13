@@ -13,6 +13,7 @@ class HomeActivity: ActivityWithMenu() {
         val binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // binidng para el imageButton, para que nos lleve a la pagina web marcada
         binding.phitecnicos.setOnClickListener {
             val url = "https://phitecnicos.com/"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
@@ -20,6 +21,7 @@ class HomeActivity: ActivityWithMenu() {
             startActivity(intent)
         }
 
+        //binding para mostrar la pagina de insertar visitas
         binding.biVisitas.setOnClickListener{
             startActivity(Intent(this, InsertarVActivity::class.java))
         }
