@@ -59,7 +59,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="260dp"
         android:background="@drawable/spinner"
-        android:backgroundTint="#605A5A"
+        android:backgroundTint="#BDBDBD"
         android:backgroundTintMode="add"
         android:breakStrategy="simple"
         android:drawableTint="#FFFFFF"

@@ -16,7 +16,7 @@
         android:text="Visitas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -117,12 +117,11 @@
         android:id="@+id/menu"
         android:layout_width="81dp"
         android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="314dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="8dp"
         android:text="Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
