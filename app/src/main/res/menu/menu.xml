@@ -16,9 +16,9 @@
         android:title="Cerrar Sesion" />
     <item
         android:id="@+id/camara"
+        android:icon="@android:drawable/ic_menu_camera"
         android:title="Camara"
-        android:icon="@drawable/camara"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/salir"
         android:title="Salir" />

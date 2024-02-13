@@ -89,7 +89,7 @@ open class ActivityWithMenu: AppCompatActivity() {
             }
             R.id.camara ->  {
                 actividadActual = 5
-                val intent = Intent(this, VisitasActivity::class.java)
+                val intent = Intent(this, ActivityCamara::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
                 startActivity(intent)
 

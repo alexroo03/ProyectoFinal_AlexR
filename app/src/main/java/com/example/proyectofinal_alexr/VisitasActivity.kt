@@ -40,6 +40,8 @@ class VisitasActivity: ActivityWithMenu() {
         binding.personal.setOnClickListener{
             startActivity(Intent(this, PersonalActivity::class.java))
         }
+
+
     }
 
 
