@@ -8,21 +8,6 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/linea"
-        android:layout_width="493dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="137dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="39dp"
-        android:text="_____________________________________________________________________________"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/fondo"
         android:layout_width="478dp"
         android:layout_height="50dp"
@@ -59,6 +44,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/correoo2"
+        android:layout_width="435dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="48dp"
+        android:text="_____________________________________________________________________________"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -104,17 +102,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="496dp"
-        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="4dp"
         android:background="#050139"
         android:text="ACCESO DIRECTO"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/biVisitas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/biVisitas"
